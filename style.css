@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root{
+  --primary-color: rgb(0, 1, 43);
+  --hover-color: #272832;
+  --accent-color: #0071FF;
+  --text-color: cyan;
+}
+
 html{
     font-family: 'Press start 2P';
     color: cyan;
-    background-color: rgb(0, 1, 43);
+    background-color: var(--primary-color);
+}
+
+button{
+  color: var(--text-color);
+  background-color: var(--hover-color);
+  font-family: "Press Start 2P", system-ui;
+  border-width: 8px;
+  border-color: var(--accent-color);
+  border-radius: 5%;
+  padding: 8px;
+  margin: 10px;
 }
