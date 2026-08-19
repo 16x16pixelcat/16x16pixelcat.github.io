@@ -10,6 +10,7 @@ html{
     font-family: 'Press start 2P';
     color: cyan;
     background-color: var(--primary-color);
+  background-image: url('assets/texture.png');
 }
 
 button{
@@ -27,4 +28,8 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+table, th, td {
+  border: 2px solid;
 }
