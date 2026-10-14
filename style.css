@@ -9,8 +9,19 @@
 html{
     font-family: 'Press start 2P';
     color: cyan;
-    background-color: var(--primary-color);
   background-image: url('assets/texture.png');
+}
+
+body{
+    background-image: url(assets/cat-vibin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center{
+  text-align: center;
 }
 
 button{
@@ -22,12 +33,6 @@ button{
   border-radius: 5%;
   padding: 8px;
   margin: 10px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 table, th, td {
