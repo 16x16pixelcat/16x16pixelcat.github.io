@@ -1,29 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-:root{
+
+:root {
   --primary-color: rgb(0, 1, 43);
   --hover-color: #272832;
   --accent-color: #0071FF;
   --text-color: cyan;
 }
 
-html{
-    font-family: 'Press start 2P';
-    color: cyan;
-}  
-
-body{
-    background-image: url(assets/cat-vibin.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+html {
+  font-family: 'Press start 2P';
+  color: cyan;
+  background-image: url(assets/cat-vibin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-button{
+button {
   color: var(--text-color);
   background-color: var(--hover-color);
   font-family: "Press Start 2P", system-ui;
@@ -34,6 +32,8 @@ button{
   margin: 10px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 2px solid;
 }
