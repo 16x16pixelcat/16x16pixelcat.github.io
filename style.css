@@ -8,9 +8,9 @@
 }
 
 html {
-    min-height: 100vh; 
+  min-height: 100vh;
   font-family: 'Press Start 2P';
-  color: cyan;
+  color: var(--text-color);
   background-image: url(assets/cat-vibin.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -21,6 +21,37 @@ html {
 .center {
   text-align: center;
 }
+
+.navbar {
+  margin: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  border: 10px solid var(--accent-color);
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  border-radius: 50px;
+  background-color: cyan;
+}
+
 
 button {
   color: var(--text-color);
