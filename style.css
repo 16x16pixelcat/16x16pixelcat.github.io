@@ -27,7 +27,6 @@ html {
   margin: 10px;
   border: 10px solid var(--accent-color);
   background-color: var(--primary-color);
-  border-radius: 50px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -52,7 +51,6 @@ html {
 }
 
 .navbar a:hover {
-  border-radius: 50px;
   background-color: cyan;
 }
 
@@ -72,4 +70,102 @@ table,
 th,
 td {
   border: 2px solid;
+}
+
+.pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px 100%,
+    calc(100% - 4px) 100%,
+    calc(100% - 4px) calc(100% - 4px),
+    100% calc(100% - 4px),
+    100% 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 0px,
+    4px 0px,
+    4px 4px,
+    0px 4px);
+  position: relative;
+}
+.pixel-corners {
+  border: 8px solid transparent;
+}
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(8px 16px,
+    8px 12px,
+    12px 12px,
+    12px 8px,
+    16px 8px,
+    calc(100% - 16px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 16px,
+    calc(100% - 8px) calc(100% - 16px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 16px) calc(100% - 8px),
+    16px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 16px));
+}
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 4px),
+    4px calc(100% - 4px),
+    4px 100%,
+    calc(100% - 4px) 100%,
+    calc(100% - 4px) calc(100% - 4px),
+    100% calc(100% - 4px),
+    100% 4px,
+    calc(100% - 4px) 4px,
+    calc(100% - 4px) 0px,
+    4px 0px,
+    4px 4px,
+    0px 4px,
+    0px 50%,
+    8px 50%,
+    8px 16px,
+    8px 12px,
+    12px 12px,
+    12px 8px,
+    16px 8px,
+    calc(100% - 16px) 8px,
+    calc(100% - 12px) 8px,
+    calc(100% - 12px) 12px,
+    calc(100% - 8px) 12px,
+    calc(100% - 8px) 16px,
+    calc(100% - 8px) calc(100% - 16px),
+    calc(100% - 8px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 12px) calc(100% - 8px),
+    calc(100% - 16px) calc(100% - 8px),
+    16px calc(100% - 8px),
+    12px calc(100% - 8px),
+    12px calc(100% - 12px),
+    8px calc(100% - 12px),
+    8px calc(100% - 16px),
+    8px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0099ff;
+  display: block;
+  pointer-events: none;
+}
+.pixel-corners::after {
+  margin: -8px;
 }
