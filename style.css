@@ -54,10 +54,6 @@ html {
   background-color: cyan;
 }
 
-a {
-  background-color: var(--accent-color);
-}
-
 button {
   color: var(--text-color);
   background-color: var(--hover-color);
